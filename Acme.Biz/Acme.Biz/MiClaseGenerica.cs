@@ -20,5 +20,11 @@ namespace Acme.Biz
             this.Message = message;
         }
 
+        //Mètodo genèrico
+        public T RetrieveValue<T>(string sql, T defaultVaule)
+        {
+            T value = defaultVaule;
+            return value;
+        }
     }
 }

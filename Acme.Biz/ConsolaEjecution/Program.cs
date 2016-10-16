@@ -14,7 +14,9 @@ namespace ConsolaEjecution
             MiClaseGenerica<string> anel = new MiClaseGenerica<string>("Dominion","prueba");
 
             Console.WriteLine(anel.Result + " " + anel.Message);
-
+            int result = anel.RetrieveValue<int>("", 9);
+            Console.WriteLine(result.ToString());
+            Console.ReadKey();
             
         }
     }
